@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- 
+      Název: Autoservis a Pneuservis Petr Matas
+      Popis: Hlavní HTML dokument pro prezentaci služeb a informací autoservisu Petr Matas.
+      Autor: Vaše jméno
+      Datum: YYYY-MM-DD
+      Dokumentace: Tento soubor obsahuje základní strukturu webu, včetně metadat, externích stylů, fontů, ikon a skriptů.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profesionální autoservis s důrazem na kvalitu, rychlost a osobní přístup."
+    />
+    <!-- Preload prvního obrázku pro rychlejší načtení -->
+    <link rel="preload" as="image" href="img/Hero/IMG_2467.webp" />
+    <title>
+      Autoservis a Pneuservis Petr Matas - Kvalitní opravy a služby pro váš vůz
+    </title>
+    <!-- Externí styly -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <!-- Google Font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome pro ikony -->
+    <script
+      src="https://kit.fontawesome.com/8ba26cb1dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper CSS pro slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!--
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Autoservis a Pneuservis Petr Matas",
+  "image": "https://www.tvadomena.cz/img/IMG_2470.jpeg", 
+  "url": "https://www.tvadomena.cz/", 
+  "telephone": "+420603814037",
+  "email": "mailto:matas.p67@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ledce 59",
+    "addressLocality": "Ledce",
+    "postalCode": "33014",
+    "addressCountry": "CZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.826626,
+    "longitude": 13.337712
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
+  "priceRange": "500 Kč - 3500 Kč",
+  "sameAs": [
+    "https://g.co/kgs/T5LGmGF"
+  ]
+}
+</script>
+-->
+  </head>
+
+  <body>
+    <div class="content-container">
+      <!-- =====================================================
+           Sekce: Header
+           Popis: Obsahuje logo a hlavní navigační menu.
+      ===================================================== -->
+      <header>
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="logo">
+            <img
+              src="./icons/Návrh_logo_Petr_Matas.webp"
+              alt="Autoservis a pneuservis Petr Matas - Ledce u Plzně"
+            />
+          </div>
+          <!-- Navigační menu a další informace -->
+          <div class="header-info">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li><a href="#about" class="navigation__link">O nás</a></li>
+                <li>
+                  <a href="#our-services" class="navigation__link"
+                    >Naše služby</a
+                  >
+                </li>
+                <li><a href="#gallery" class="navigation__link">Galerie</a></li>
+                <li>
+                  <a href="#price-list" class="navigation__link">Ceník</a>
+                </li>
+                <li><a href="#contact" class="navigation__link">Kontakt</a></li>
+              </ul>
+            </nav>
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+              <!--<i class="fa-solid fa-xmark"></i>-->
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- =====================================================
+           Sekce: Hero
+           Popis: Úvodní vizuální sekce s animovanými pozadími.
+      ===================================================== -->
+      <section class="hero">
+        <div class="hero__bg hero__bg--1"></div>
+        <div class="hero__bg hero__bg--2"></div>
+        <div class="hero__bg hero__bg--3"></div>
+      </section>
+
+      <!-- =====================================================
+           Sekce: O nás
+           Popis: Představuje autoservis, jeho služby a důvody, proč si vybrat právě nás.
+      ===================================================== -->
+      <section id="about" class="about">
+        <h2 class="section-title">
+          Vítejte na webových stránkách Autoservisu Petr Matas!
+        </h2>
+        <div class="about__content">
+          <!-- Obrázek autoservisu -->
+          <div class="about__image">
+            <img src="./img/IMG_2470.webp" alt="Autoservis" />
+          </div>
+          <!-- Textový obsah -->
+          <div class="about__text">
+            <p>
+              O Vaše vozidlo se postaráme s maximální péčí a precizností. Naší
+              prioritou je poskytovat kvalitní, spolehlivé a rychlé služby,
+              které vám umožní užívat si jízdu bez starostí. Najdete nás jen pár
+              kilometrů severně od Plzně.
+            </p>
+            <p>
+              Nabízíme širokou škálu služeb pro všechny typy osobních a
+              užitkových vozidel, včetně výměny olejů v automatických
+              převodovkách, diagnostiky vozidel, servisních prohlídek a dalších.
+              K tomu vám vždy garantujeme přístupné ceny a transparentní
+              komunikaci během celého procesu opravy.
+            </p>
+
+            <h3>Proč si vybrat právě nás?</h3>
+            <ul class="reasons-list">
+              <li>
+                <strong> - Odbornost a zkušenosti:</strong> Na trhu působíme
+                více než 25 let.
+              </li>
+              <li>
+                <strong> - Rychlost a efektivita:</strong> Snažíme se
+                minimalizovat dobu, po kterou je vaše auto v servisu, aniž
+                bychom snižovali kvalitu provedené práce.
+              </li>
+              <li>
+                <strong> - Komplexní služby:</strong> Postaráme se o všechno –
+                od diagnostiky a náročné opravy až po řízení s Vaší pojišťovnou
+                v případě nehody.
+              </li>
+              <li>
+                <strong> - Individuální přístup:</strong> Ke každému vozidlu
+                přistupujeme s ohledem na jeho specifika, abyste vždy dostali to
+                nejlepší.
+              </li>
+            </ul>
+
+            <p>
+              Jsme smluvním partnerem společnosti
+              <strong>Generali – Česká pojišťovna.</strong>
+            </p>
+            <p>
+              Ať už potřebujete rutinní údržbu nebo složitější opravu,
+              autoservis Petr Matas je tady pro Vás. Kontaktujte nás ještě dnes
+              a zjistěte, jak vám můžeme pomoci udržet vaše vozidlo v perfektním
+              stavu!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           Sekce: Naše služby
+           Popis: Výčet služeb poskytovaných autoservisem s popisem a ilustračními obrázky.
+      ===================================================== -->
+      <section id="our-services" class="our-services">
+        <h2 class="our-services-title">
+          🧰 Naše služby – Kvalitní servis pro váš vůz v Ledcích u Plzně
+        </h2>
+        <p class="our-services-description">
+          V autoservisu a pneuservisu Petr Matas poskytujeme komplexní péči o
+          osobní i dodávkové vozy všech značek. Ať už se jedná o běžnou údržbu,
+          náročnější opravy, nebo speciální přání – jsme tu pro vás. Díky
+          zkušenostem, individuálnímu přístupu a důrazu na kvalitu se postaráme
+          o váš vůz tak, jako by byl náš vlastní.
+        </p>
+
+        <div class="service-grid">
+          <!-- Servis vozidel -->
+          <div class="service-box">
+            <h3>Servis vozidel</h3>
+            <p>
+              Komplexní opravy a údržba osobních i dodávkových vozů – pozáruční
+              servis, opravy elektroinstalací, výměny oleje, tlumičů a dalších
+              důležitých součástí.
+            </p>
+          </div>
+          <!-- Obrázek servisu -->
+          <div class="service-box">
+            <img src="./icons/2.webp" alt="Ikona servisu vozidel" />
+          </div>
+          <!-- STK a měření emisí -->
+          <div class="service-box">
+            <h3>STK a měření emisí</h3>
+            <p>
+              Zajistíme kompletní přípravu vozidla na technickou kontrolu – od
+              důkladné prohlídky a opravy závad až po zprostředkování měření
+              emisí pro benzinové i dieselové motory. Postaráme se, aby vaše
+              auto STK prošlo bez starostí.
+            </p>
+          </div>
+          <!-- Obrázek STK -->
+          <div class="service-box">
+            <img
+              src="./img/our-services/IMG_2461.webp"
+              alt="STK a měření emisí"
+            />
+          </div>
+          <!-- Pneuservis -->
+          <div class="service-box">
+            <h3>Pneuservis</h3>
+            <p>
+              Zajistíme kompletní služby pneuservisu – přezutí a vyvážení kol,
+              opravy defektů i odbornou likvidaci starých pneumatik. Postaráme
+              se o váš vůz rychle a spolehlivě v každém ročním období.
+            </p>
+          </div>
+          <!-- Obrázek pneuservisu -->
+          <div class="service-box">
+            <img src="./img/our-services/IMG_2463.webp" alt="Pneuservis" />
+          </div>
+          <!-- Servis autoklimatizací -->
+          <div class="service-box">
+            <h3>Servis autoklimatizací</h3>
+            <p>
+              Výměna náplní, doplňování chladiva a čištění klimatizací pro
+              všechny typy vozidel.
+            </p>
+          </div>
+          <!-- Obrázek klimatizací -->
+          <div class="service-box">
+            <img
+              src="./img/our-services/IMG_2462.webp"
+              alt="Servis autoklimatizací"
+            />
+          </div>
+          <!-- Tažná zařízení -->
+          <div class="service-box">
+            <h3>Tažná zařízení</h3>
+            <p>
+              Dodáváme a montujeme kvalitní tažná zařízení od českého výrobce
+              SVC Náchod. Nabízíme velkoobchodní i maloobchodní prodej a
+              profesionální instalaci dle typu vozidla.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           Sekce: Galerie
+           Popis: Fotogalerie autoservisu s využitím Swiper slideru.
+      ===================================================== -->
+      <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Galerie</h2>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Jednotlivé snímky galerie -->
+            <div class="swiper-slide">
+              <img
+                src="./img/Galerie/IMG_2465.webp"
+                alt="Autoservis Petr Matas - pohled 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Galerie/IMG_2468.webp"
+                alt="Autoservis Petr Matas - pohled 2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Galerie/IMG_2474.webp"
+                alt="Autoservis Petr Matas - práce na voze"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Galerie/IMG_2477.webp"
+                alt="Autoservis Petr Matas - vybavení dílny"
+              />
+            </div>
+          </div>
+
+          <!-- Navigační šipky slideru -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Číselná navigace (volitelně) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           Sekce: Ceník
+           Popis: Obsahuje tabulky s cenami služeb autoservisu a pneuservisu.
+      ===================================================== -->
+      <section id="price-list" class="price-list">
+        <div class="price-list-container">
+          <h2 class="price-list__title">Ceníky</h2>
+
+          <!-- Ceník Autoservis -->
+          <h3>Ceník Autoservis</h3>
+          <table class="cenik-table">
+            <thead>
+              <tr>
+                <th>Služba</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hodinová sazba</td>
+                <td>500,-</td>
+              </tr>
+              <tr>
+                <td>STK + ME</td>
+                <td>3500,-</td>
+              </tr>
+              <tr>
+                <td>Naplnění klimatizace (R-134a)</td>
+                <td>od 2000,- včetně práce dle gramáže</td>
+              </tr>
+              <tr>
+                <td>Naplnění klimatizace (R-1234yf)</td>
+                <td>od 3300,- včetně práce dle gramáže</td>
+              </tr>
+              <tr>
+                <td>Montáž tažného zařízení</td>
+                <td>od 2500,- včetně práce</td>
+              </tr>
+              <tr>
+                <td>Diagnostika</td>
+                <td>od 500,-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Ceník Pneuservis -->
+          <h3>Ceník Pneuservis</h3>
+          <table class="cenik-table">
+            <thead>
+              <tr>
+                <th>Služba</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Výměna kol (bez přezutí)</td>
+                <td>
+                  R13-R15 – 400,- / auto<br />
+                  R16-R18 – 600,- / auto<br />
+                  R19-R22 – 800,- / auto
+                </td>
+              </tr>
+              <tr>
+                <td>Přezutí pneumatik</td>
+                <td>
+                  R13-R15 – 1000,- / auto<br />
+                  R16-R18 – 1500,- / auto<br />
+                  R19-R22 – 2000,- / auto<br />
+                  Runflat – od 2500,- / auto
+                </td>
+              </tr>
+              <tr>
+                <td>Oprava defektu</td>
+                <td>od 500,- / ks</td>
+              </tr>
+              <tr>
+                <td>Vyvážení kol</td>
+                <td>od 100,- / ks</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Ceny ND sdělíme na vyžádání po telefonu.</p>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           Sekce: Kontakt
+           Popis: Obsahuje kontaktní informace o autoservisu a vloženou Google mapu.
+      ===================================================== -->
+      <section id="contact" class="contact">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-content">
+          <!-- Kontaktní informace -->
+          <div class="contact-info">
+            <p><strong>Autoservis Petr Matas</strong></p>
+            <p>📍 Adresa: Ledce 59, 33014 Ledce u Plzně</p>
+            <p>
+              ✉️ E-mail:
+              <a href="mailto:matas.p67@gmail.com">matas.p67@gmail.com</a>
+            </p>
+            <p>📞 Telefon: +420 603 814 037</p>
+            <p>🆔 IČ: 69930520</p>
+            <p>💰 DIČ: 6704280011</p>
+          </div>
+          <!-- Google mapa s umístěním servisu -->
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41181.4794338268!2d13.337712000000002!3d49.826626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470af378cb7ad813%3A0xa8bfa9f02ba5d21a!2sAutoservis%20Petr%20Matas!5e0!3m2!1scs!2scz!4v1744466218454!5m2!1scs!2scz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           Tlačítko: Scroll to Top
+           Popis: Tlačítko, které umožňuje rychlý návrat na začátek stránky.
+      ===================================================== -->
+      <button id="scrollTopBtn" class="scroll-top">
+        <img src="./icons/1.webp" alt="Šipka nahoru" />
+      </button>
+
+      <!-- =====================================================
+           Sekce: Footer
+           Popis: Patička stránky s copyright informacemi.
+      ===================================================== -->
+      <footer class="footer">
+        <p>&copy; 2025 Autoservis Petr Matas</p>
+      </footer>
+    </div>
+
+    <!-- =====================================================
+         Externí skripty
+         Popis: Načítáme Swiper JS pro slider a vlastní skript stránky.
+    ===================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="skript.js"></script>
+  </body>
+</html>
